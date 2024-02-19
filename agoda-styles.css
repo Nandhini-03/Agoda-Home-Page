@@ -1,0 +1,2744 @@
+*
+{
+    margin:0;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    color: blue;
+}
+input{
+    outline:none;
+}
+@font-face 
+{ 
+    font-family: "kite-mallory"; 
+    src: url("//cdn0.agoda.net/images/fonts/mallory-light-webfont-v01.eot?#iefix") format("embedded-opentype"), 
+    url("//cdn0.agoda.net/images/fonts/mallory-light-webfont-v01.woff2") format("woff2"), 
+    url("//cdn0.agoda.net/images/fonts/mallory-light-webfont-v01.woff") format("woff"), 
+    url("//cdn0.agoda.net/images/fonts/mallory-light-webfont-v01.ttf") format("truetype"); 
+    font-style: normal; font-weight: 300; 
+}
+@font-face 
+{ 
+    font-family: "kite-mallory"; 
+    src: url("//cdn0.agoda.net/images/fonts/Mallory-Book.eot?#iefix") format("embedded-opentype"), 
+    url("//cdn0.agoda.net/images/fonts/Mallory-Book.woff2") format("woff2"), 
+    url("//cdn0.agoda.net/images/fonts/Mallory-Book.woff") format("woff"), 
+    url("//cdn0.agoda.net/images/fonts/Mallory-Book.ttf") format("truetype"); 
+    font-style: normal; font-weight: 400; 
+}
+@font-face 
+{ 
+    font-family: "kite-mallory"; src: url("//cdn0.agoda.net/images/fonts/mallory-medium.eot?#iefix") format("embedded-opentype"), 
+    url("//cdn0.agoda.net/images/fonts/mallory-medium.woff2") format("woff2"), 
+    url("//cdn0.agoda.net/images/fonts/mallory-medium.woff") format("woff"), 
+    url("//cdn0.agoda.net/images/fonts/mallory-medium.ttf") format("truetype"); 
+    font-style: normal; font-weight: 500; 
+}
+@font-face 
+{ 
+    font-family: mallory; src: url("//cdn0.agoda.net/images/fonts/Mallory-Book.eot?#iefix") format("embedded-opentype"), 
+    url("//cdn0.agoda.net/images/fonts/Mallory-Book.woff2") format("woff2"), 
+    url("//cdn0.agoda.net/images/fonts/Mallory-Book.woff") format("woff"), 
+    url("//cdn0.agoda.net/images/fonts/Mallory-Book.ttf") format("truetype"); 
+    font-style: normal; font-weight: 400; 
+}
+@font-face 
+{ 
+    font-family: mallory; src: url("//cdn0.agoda.net/images/fonts/mallory-medium.eot?#iefix") format("embedded-opentype"), 
+    url("//cdn0.agoda.net/images/fonts/mallory-medium.woff2") format("woff2"), 
+    url("//cdn0.agoda.net/images/fonts/mallory-medium.woff") format("woff"), 
+    url("//cdn0.agoda.net/images/fonts/mallory-medium.ttf") format("truetype"); 
+    font-style: normal; font-weight: 700; 
+}
+body{
+    /* overflow-x: hidden; */
+    /* font-family:"kite-mallory"; */
+    font-family: mallory,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    line-height: 1.42857;
+}
+html{
+    text-size-adjust: 100%;
+}
+.main-header
+{
+    /* display: inline-block; */
+    justify-content: space-between;
+}
+.title-content-links
+{
+    padding-left: 24px;
+    padding-right: 0px;
+    margin: 0px 4px;
+    text-align: center;
+    display: flex;
+}
+.Logo-navigation
+{
+    line-height: normal;
+    vertical-align: middle;
+    margin-right: 12px;
+    position: relative;
+    display: inline-block;
+}
+.primary-logo-image
+{
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    margin-top: 5px;
+    margin-left: 20px;
+    /* margin-right: 20px; */
+    /* width: 89px;
+    height: 37px; */
+    width: 90px;
+    height: 38px;
+}
+.learn-more-section
+{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(253, 238, 230);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.learn-more-image-content
+{
+    margin-left: 200px;
+}
+.learn-more-image
+{
+    /* margin-right: 16px; */
+    border: 0;
+    vertical-align: middle;
+}
+.learn-more-content
+{
+    color: #0a0101;
+    /* text-align: center; */
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    /* margin-left: 200px; */
+    /* margin-right: 32px; */
+    /* margin-top: 10px; */
+}
+.learn-more-button
+{
+    display:flex;
+    background-color: white;
+    color: blue;
+    border:1px solid blue;
+    border-radius: 5px;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 23px;
+    font-weight: 400;
+    margin-right: 400px;
+    padding: 2px 10px 2px 10px;
+    /* position:absolute; */
+    /* top:50%;
+    right:10px;
+    transform: translateY(50%); */
+}
+.learn-more-button:hover
+{
+    background-color: blue;
+    color:white;
+}
+.language-image-button:hover
+{
+    cursor: pointer;
+}
+.price-display-button
+{
+    color: #0a0101;
+    text-decoration: none;
+}
+.price-display-button:hover
+{
+    cursor: pointer;
+}
+.sign-in-button
+{
+    background-color: white;
+    color: rgb(83, 146, 249);
+    border:white;
+    border-radius: 5px;
+    margin-top:10px;
+    margin-bottom:10px;
+    margin-right: 7px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    padding: 15px;
+    /* margin-right:60px; */
+}
+.sign-in-button:hover{
+    background-color: rgb(83, 146, 249);
+    color:white;
+    cursor: pointer;
+}
+.create-account-button
+{
+    background-color: white;
+    color:rgb(83, 146, 249);
+    border:1px solid rgb(83, 146, 249);
+    border-radius: 5px;
+    text-align: center;
+    font-size: 15px;
+    width:145px;
+    font-weight:200;
+    /* padding: 13px; */
+    padding:8px 13px 8px 13px;
+    /* margin-right: 50px; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.create-account-button:hover{
+    background-color: rgb(83, 146, 249);
+    color:white;
+    cursor: pointer;
+}
+.cart-image
+{
+    cursor: pointer;
+    align-items: center;
+    padding:5px;
+    margin-left:35px;
+    margin-top:10px;
+    /* margin-right: -200px; */
+}
+.menu-image
+{
+    /* margin-top: 20px; */
+    cursor: pointer;
+    height:30px;
+    width:50px;
+    align-items: center;
+    margin-top: 15px;
+    margin-left: 50px;
+}
+.search-icons
+{
+    width:20px;
+    height:20px;
+    margin-right:10px;
+}
+.language-price-sign-in
+{
+    display: flex;
+    float:right;
+    width:400px;
+    /* margin-right: 50px; */
+    flex:1 1 0%;
+    justify-content: flex-end;
+}
+.header-link-container
+{
+    /* vertical-align: middle; */
+    /* margin-left: 12px; */
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    font-family: "kite-mallory";
+    /* left:0; */
+    /* display: inline-block; */
+}
+.header-packages
+{
+    display: inline-block;
+    position: relative;
+    line-height: 56px;
+    /*margin:0px;*/
+}
+.header-content-style
+{
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 500;
+    margin: 0px;
+}
+.Home-body
+{
+    margin: auto;
+    max-width: 1100px;
+    width: 100%;
+    /* width: -webkit-fill-available; */
+}
+.Top-destination
+{
+    margin: 64px auto;
+    width: 100%;
+}
+.Span-styled
+{
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 500;
+    color: rgb(42, 42, 46);
+    padding-bottom: 8px;
+    display: block;
+    text-align: center;
+    font-family: "kite-mallory";
+}
+.Top-destination-India
+{
+    -webkit-tap-highlight-color: transparent;
+    color: inherit;
+    fill: inherit;
+    position: relative;
+    scroll-behavior: smooth;
+}
+.Top-destination-India i
+/* .Popular_destinations_outside_India i */
+{
+  margin-right: 50px;
+  margin-left: 50px;
+  top: 50%;
+  height: 46px;
+  width: 46px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  position: absolute;
+  text-align: center;
+  line-height: 44px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.Popular_destinations_outside_India i
+{
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 50%;
+    /* height: 46px; */
+    /* width: 46px; */
+    /* cursor: pointer; */
+    /* font-size: 1.2rem; */
+    /* position: absolute; */
+    /* text-align: center; */
+    /* line-height: 44px; */
+    /* background: #fff; */
+    /* border-radius: 50%; */
+    /* transform: translateY(-50%);
+    transition: transform 0.1s linear; */
+}
+.Top-destination-India i:first-child,
+.Popular_destinations_outside_India i:first-child
+{
+  left: -22px;
+  display: none;
+
+}
+.Top-destination-India i:last-child,
+.Popular_destinations_outside_India i:last-child
+{
+    right:-22px;
+}
+.allignment-style
+{
+    -webkit-tap-highlight-color: transparent;
+    color: inherit;
+    fill: inherit;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin-bottom: -16px;
+    scroll-behavior: smooth;
+}
+.allignment-style::-webkit-scrollbar
+{
+    display:none;
+}
+.Sites-info
+{
+    -webkit-tap-highlight-color: transparent;
+    color: inherit;
+    fill: inherit;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    margin-right: 8px;
+    margin-left: 8px;
+    padding-bottom: 16px;
+}
+.Top-destination-Item
+{
+    background-color: transparent;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    margin-right: 0px;
+    margin-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: inline-block;
+}
+.Destination-image
+{
+    border-color: #dddfe2;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 1px;
+    height: 130px;
+    width: 130px;
+}
+.Destination-image:hover{
+    transition: transform 0.3s ease; 
+    transform: scale(1.10);
+}
+.Destination-city
+{
+    color: #2a2a2e;
+    /*    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;*/
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 34px;
+    line-height: 27px;
+    max-height: 34px;
+    overflow: hidden;
+    padding-top: 12px;
+    position: relative;
+    text-align: center;
+    font-family: "mallory";
+}
+.Destination-accomodations
+{
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    color: rgb(115, 115, 115);
+    padding-top: 4px;
+    display: block;
+    text-align: center;
+    font-family: "kite-mallory";
+}
+.gap-style
+{
+    margin-bottom: 16px;
+}
+.accommodation-flight-promotions
+{
+    /* content: " ";
+    display: table; */
+    width:100%;
+}
+.flight-and-activities-promotions
+{
+    width:100%;
+    margin-left: 160px;
+}
+.box-content-style
+{
+    margin-top: 32px;
+    margin-bottom: 16px;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+.heading-style
+{
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 500;
+    margin: 8px 0px;
+    align-items: center;
+    text-align: center;
+    font-family: "kite-mallory";
+}
+.next-viewallbox-style
+{
+    width: 200px;
+    text-align: right;
+}
+.box-viewall-style{
+    background-color: transparent;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+}
+.spanStyled
+{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+}
+.button-styles-accommodation
+{
+    -webkit-tap-highlight-color: transparent;
+    color: inherit;
+    fill: inherit;
+    bottom: 0px;
+    width: 100%;
+    margin-top: 8px;
+}
+.button-styles
+{
+    -webkit-tap-highlight-color: transparent;
+    color: inherit;
+    fill: inherit;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 16px;
+}
+.button-styles-ndYok
+{
+    -webkit-tap-highlight-color: transparent;
+    color: inherit;
+    fill: inherit;
+    position: absolute;
+    top: 0px;
+    transform: translate3d(-200%, 0px, 0px);
+    transition: transform 0.3s ease-in-out 0s;
+    padding: 4px;
+}
+.button-styles-npeHwt
+{
+    -webkit-tap-highlight-color: transparent;
+    color: inherit;
+    fill: inherit;
+    width: 8px;
+    height: 8px;
+    background: rgb(168, 179, 203);
+    border-radius: 999px;
+    transition: transform 0.3s ease-in-out 0s, background 0.3s ease-in-out 0s;
+}
+.button-styles-LqiPd
+{
+    -webkit-tap-highlight-color: transparent;
+    color: inherit;
+    fill: inherit;
+    position: absolute;
+    top: 0px;
+    transform: translate3d(-100%, 0px, 0px);
+    transition: transform 0.3s ease-in-out 0s;
+    padding: 4px;
+}
+.button-styles-lwnbIU
+{
+    -webkit-tap-highlight-color: transparent;
+    color: inherit;
+    fill: inherit;
+    width: 8px;
+    height: 8px;
+    background: rgb(38, 95, 201);
+    border-radius: 999px;
+    transition: transform 0.3s ease-in-out 0s, background 0.3s ease-in-out 0s;
+}
+.button-styles-lwCVjd
+{
+    -webkit-tap-highlight-color: transparent;
+    color: inherit;
+    fill: inherit;
+    position: absolute;
+    top: 0px;
+    transform: translate3d(0%, 0px, 0px);
+    transition: transform 0.3s ease-in-out 0s;
+    padding: 4px;
+}
+.button-styles-dgFah
+{
+    -webkit-tap-highlight-color: transparent;
+    color: inherit;
+    fill: inherit;
+    width: 8px;
+    height: 8px;
+    background: rgb(168, 179, 203);
+    border-radius: 999px;
+    transition: transform 0.3s ease-in-out 0s, background 0.3s ease-in-out 0s;
+}
+.button-styles-vhMgp
+{
+    -webkit-tap-highlight-color: transparent;
+    color: inherit;
+    fill: inherit;
+    position: absolute;
+    top: 0px;
+    transform: translate3d(100%, 0px, 0px);
+    transition: transform 0.3s ease-in-out 0s;
+    padding: 4px;
+}
+.button-styles-guFbj
+{
+    -webkit-tap-highlight-color: transparent;
+    color: inherit;
+    fill: inherit;
+    width: 8px;
+    height: 8px;
+    transform: scale(0.667);
+    background: rgb(168, 179, 203);
+    border-radius: 999px;
+    transition: transform 0.3s ease-in-out 0s, background 0.3s ease-in-out 0s;
+}
+.button-styles-buKYh
+{
+    -webkit-tap-highlight-color: transparent;
+    color: inherit;
+    fill: inherit;
+    position: absolute;
+    top: 0px;
+    transform: translate3d(200%, 0px, 0px);
+    transition: transform 0.3s ease-in-out 0s;
+    padding: 4px;
+}
+.button-styles-gnKoh
+{
+    -webkit-tap-highlight-color: transparent;
+    color: inherit;
+    fill: inherit;
+    width: 8px;
+    height: 8px;
+    transform: scale(0.333);
+    background: rgb(168, 179, 203);
+    border-radius: 999px;
+    transition: transform 0.3s ease-in-out 0s, background 0.3s ease-in-out 0s;
+}
+.flights-activities-promotion
+{
+    margin-top: 32px;
+    margin-bottom: 16px;
+    /* margin-left:-200px; */
+    -webkit-box-pack: center;
+    justify-content: center;
+    display: flex;
+}
+.flights-activities-heading
+{
+    text-align: center;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 500;
+    margin: 8px 0px;
+    font-family: "kite-mallory";
+}
+.flightsAndActivities 
+{
+    margin-top: 8px;
+    margin-bottom: 24px;
+    max-width: 1000px;
+}
+.flights-activities-styles
+{
+    -webkit-tap-highlight-color: transparent;
+    color: inherit;
+    fill: inherit;
+    position: relative;
+}
+.flights-and-activities
+{
+    scroll-padding-left: 52px;
+    scroll-behavior: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-tap-highlight-color: transparent;
+    color: inherit;
+    fill: inherit;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin-bottom: -16px;
+}
+.flights-activities-section
+{
+    -webkit-tap-highlight-color: transparent;
+    color: inherit;
+    fill: inherit;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    min-width: 423px;
+    max-width: 423px;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    margin-right: 8px;
+    margin-left: 8px;
+    padding-bottom: 16px;
+}
+.flights-activities-content
+{
+    -webkit-tap-highlight-color: transparent;
+    color: inherit;
+    fill: inherit;
+    display: flex;
+    margin-right: 12px;
+    margin-left: 12px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+/* .flight-image{
+    width:430px;
+    height:185px;
+}
+.flights-activities-image
+{
+    width: 410px;
+    height: 185px;
+    margin-right: 20px;
+} */
+.bottom-style
+{
+    box-sizing: border-box;
+    display: block;
+}
+.traveller-review
+{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100%;
+}
+.title-traveller-review{
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: 1.2em;
+    font-family: "mallory";
+}
+.total-traveller-review
+{
+    display: flex;
+    margin: 0 -.5%;
+}
+.traveller-reviewers-content
+{
+    background: #fff;
+    border-bottom-color: #75a8f9;
+    outline-color: #e9ebee;
+    box-sizing: border-box;
+    width: 100%;
+    height: 350px;
+}
+.traveller-Hotel{
+    color: #5392f9;
+    font-weight: 700;
+    margin-bottom: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 1.5em;
+    margin: 0 0 9px;
+    font-family: "mallory";
+}
+.traveller-country
+{
+    color: #737373;
+    font-size: 1.3em;
+    margin: 0 0 16px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: "mallory";
+}
+.traveller-content{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 0;
+    overflow-y: hidden;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: "mallory";
+}
+.traveller-name{
+    font-size: 1.3em;
+    margin: 16px 0 0;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: "mallory";
+}
+.Popular-destinations-outsideIndia
+{
+    margin: 64px auto;
+    width: 80%;
+}
+.Span-styled-popular-destinations{
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 500;
+    color: rgb(42, 42, 46);
+    padding-bottom: 8px;
+    display: block;
+    text-align: center;
+    font-family: "kite-mallory";
+}
+.popular_destinations_outside_India
+{
+    -webkit-tap-highlight-color: transparent;
+    color: inherit;
+    fill: inherit;
+    position: relative;
+}
+.popular-destinations-scrolling
+{
+    scroll-padding-left: 52px;
+    scroll-behavior: auto;
+    scroll-snap-type: x mandatory;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin-bottom: -16px;
+}
+/* .Popular_destinations_outside_India i
+{
+  margin-right: 50px;
+  margin-left: 50px;
+  top: 50%;
+  height: 46px;
+  width: 46px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  position: absolute;
+  text-align: center;
+  line-height: 44px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+} */
+.popular-destinations-scrolling::-webkit-scrollbar
+{
+    display: none;
+}
+/* .Popular_destinations_outside_India i:first-child
+{
+  left: -22px;
+  display: none;
+
+}
+.Popular_destinations_outside_India i:last-child
+{
+  right: -22px;
+} */
+.destinations-outside
+{
+    -webkit-tap-highlight-color: transparent;
+    color: inherit;
+    fill: inherit;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    margin-right: 8px;
+    margin-left: 8px;
+    padding-bottom: 16px;
+}
+.popular-destination-Item
+{
+    box-sizing:border-box;
+    color:rgb(0, 0, 0);
+    display:block;
+    font-size:12px;
+    font-weight:400;
+}
+.link-styled-destinations
+{
+    background-color: transparent;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    margin-right: 0px;
+    margin-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: inline-block;
+}
+.popular-destination-Image
+{
+    border-color: #dddfe2;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 1px;
+    height: 124px;
+    transition: transform .2s,-webkit-transform .2s;
+    width: 124px;
+    border: 0;
+    vertical-align: middle;
+}
+.popular-destination-city
+{
+    color: #2a2a2e;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 34px;
+    line-height: 22px;
+    max-height: 34px;
+    overflow: hidden;
+    padding-top: 12px;
+    position: relative;
+    text-align: center;
+    font-family: "mallory";
+}
+.popular-destination-accommodations
+{
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    color: rgb(115, 115, 115);
+    padding-top: 4px;
+    display: block;
+    text-align: center;
+    font-family: "kite-mallory";
+}
+.Footer-part
+{
+    padding: 0;
+    
+}
+.footer-section
+{
+    display: block;
+    box-sizing: border-box;
+}
+.footer-links
+{
+    background-color: rgb(233, 235, 238);
+    color: rgb(42, 42, 46);
+}
+.footer-links-section
+{
+    margin: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    max-width: 1132px;
+    display: flex;
+}
+.footer-part-links
+{
+    width: 20%;
+    flex-direction: column;
+    display: flex;
+    color: rgb(42, 42, 46);
+}
+.footer-heading
+{
+    font-size: 16px;
+    line-height: 8px;
+    font-weight: 500;
+    margin: 12px 0px;
+    font-family: "kite-mallory";
+    /*margin-block-start: 1.67em;
+    margin-block-end: 1.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;*/
+    padding-left:40px;
+    padding-bottom:-10px;
+}
+.continent-details
+{
+    font-family: "mallory";
+    background-color: #fff;
+    font-size: 11px;
+    margin-left: 100px;
+}
+
+.row {
+    display: flex;
+}
+.Group-list
+{
+    color: #5b5b5b;
+    margin: 0;
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    font-family: "kite-mallory";
+}
+.Links-list
+{
+    display: list-item;
+    text-align: -webkit-match-parent;
+    font-family: "kite-mallory";
+    list-style-type: none;
+}
+.list-footer
+{
+    background-color: transparent;
+    font-size: 10px;
+    font-family: "kite-mallory";
+    line-height: 20px;
+    font-weight: 400;
+    color: rgb(83, 146, 249);
+    text-decoration: none;
+}
+.para-style
+{
+    color: rgb(42, 42, 46);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    margin: 0px;
+    font-family: "kite-mallory";
+}
+.top-destinations
+{
+    background-color: #fff;
+    display: block;
+}
+.destinations-footer
+{
+    padding-bottom: 50px;
+    padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 972px;
+    font-family: "mallory";
+}
+.table-styles
+{
+    border-collapse: collapse;
+    width:100%; 
+    /*cellspacing="0";
+    cellpadding="10";*/
+}
+.List-links-ordered
+{
+    list-style: none;
+    margin-top: 0;
+    outline: 0;
+    padding: 0;
+    font-family: "mallory";
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    /* text-decoration: none; */
+    
+}
+.list-styles
+{
+    padding-bottom: 5px;
+    line-height: 13px;
+    font-size:15px;
+    font-weight:400;
+    height:16.9922px;
+    text-align:left;
+    text-size-adjust:100%;
+    font-family: "mallory";
+}
+.featured-homes-start
+{
+    margin-top: 48px;
+    margin-bottom: 48px;
+    width: 100%;
+    -webkit-box-pack: center;
+    justify-content: center;
+    display: flex;
+    color: rgb(42, 42, 46);
+}
+.featured-homes-recommended
+{
+    width: 1100px;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+}
+.featured-homes-head-style
+{
+    margin-bottom: 24px;
+}
+.featured-homes-heading
+{
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 500;
+    margin: 8px 0px;
+    text-align: center;
+    font-family: "kite-mallory";
+}
+.list-of-places
+{
+    display: flex;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding: 0px;
+}
+.featured-homes-places-highlighted
+{
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    list-style-type: none;
+    width: auto;
+    margin-bottom: -2px;
+    flex: 1 1 0%;
+    padding: 8px;
+}
+.featured-homes-places
+{
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    list-style-type: none;
+    width: auto;
+    margin-bottom: -1px;
+    flex: 1 1 0%;
+    padding: 8px;
+    border-bottom: 1px solid rgb(221, 223, 226);
+}
+.featured-homes-style{
+    padding-right: 12px;
+    padding-left: 12px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+.featured-homes-span-style
+{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: auto;
+    margin-bottom: -2px;
+    flex: 1 1 0%;
+    padding: 8px;
+}
+.featured-homes-places
+{
+    font-family: "kite-mallory";
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: rgb(42, 42, 46);
+    padding-right: 12px;
+    padding-left: 12px;
+    justify-content: center;
+    white-space: nowrap;
+}
+.featured-homes-body-outline
+{
+    margin-top: 8px;
+    width:1200px;
+}
+.featured-homes-body
+{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% + 12px);
+}
+.featured-homes
+{
+    box-sizing: border-box;
+    display: block;
+    flex-basis: 100%;
+    -webkit-box-flex: 0;
+    flex-grow: 0;
+    max-width: 20%;
+    margin: 10px;
+}
+.featured-homes-link-style
+{
+    background-color: transparent;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: rgb(83, 146, 249);
+    text-decoration: none;
+}
+.featured-homes-grid-style
+{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% + 4px);
+    margin: -2px;
+}
+.featured-homes-content
+{
+    box-sizing: border-box;
+    display: block;
+    flex-basis: 100%;
+    -webkit-box-flex: 0;
+    flex-grow: 0;
+    max-width: 100%;
+    margin: 0px;
+}
+.featured-homes-ldGkj
+{
+    position: relative;
+}
+.featured-homes-images
+{
+    font-family: "object-fit:cover";
+}
+.featured-homes-name-style
+{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: rgb(42, 42, 46);
+    font-family: "kite-mallory";
+}
+.location-style
+{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% + 4px);
+    margin: -2px;
+}
+.featured-homes-location
+{
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: "kite-mallory";
+}
+.featured-homes-space-style
+{
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    color: rgb(115, 115, 115);
+}
+.featured-homes-amount
+{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% + 4px);
+    margin: -2px;
+}
+.featured-homes-rupees
+{
+    padding: 2px;
+    box-sizing: border-box;
+    margin: 0px;
+}
+.featured-homes-value
+{
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+    color: rgb(225, 45, 45);
+    font-family: "kite-mallory";
+}
+.featured-homes-button
+{
+    margin-top: 32px;
+    text-align: center;
+    margin-left: -20px;
+}
+.button-styles-featured-homes
+{
+    position: relative;
+    user-select: none;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: rgb(83, 146, 249);
+    color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 3px 1px;
+    cursor: pointer;
+    /* border-width: initial; */
+    border-style: none;
+    /* border-color: initial; */
+    /* border-image: initial; */
+    border-radius: 4px;
+    transition: all 0.15s ease-in-out 0s;
+}
+.transparent
+{
+    opacity: 0.5;
+}
+.button-content
+{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    font-family: "kite-mallory";
+}
+.footer-copyright-section
+{
+    display: block;
+    box-sizing: border-box;
+}
+.copyright-content
+{
+    padding-top: 48px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: rgb(42, 42, 46);
+    color: rgb(215, 215, 219);
+}
+.copyright-para
+{
+    padding-bottom:10px;
+    font-family: "kite-mallory";
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 300;
+    margin: 8px;
+}
+.copyright-images-style
+{
+    /* text-align: center;
+    /*background-color: rgb(42, 42, 46);*/
+    /*color: rgb(215, 215, 219); */
+    margin: 35px auto 50px;
+}
+.copyright-images{
+    width: 1132px;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    display: flex;
+    margin: 10px;
+}
+.copyright-images-cgGjg{
+    display: inline-block;
+    background-image: url(https://cdn6.agoda.net/images/sprite/bg-sprite-partner_v3.png);
+    width: 144px;
+    height: 48px;
+    background-repeat: no-repeat;
+    background-position: 0px -90px;
+    margin: 10px;
+}
+.copyright-images-fvjFhb
+{
+    display:inline-block;
+    background-image: url(https://cdn6.agoda.net/images/sprite/bg-sprite-partner_v3.png);
+    width: 144px;
+    height: 48px;
+    background-repeat: no-repeat;
+    background-position: -144px -148px;
+    margin: 10px;
+}
+.copyright-images-kvdJvd
+{
+    display: inline-block;
+    background-image: url(https://cdn6.agoda.net/images/sprite/bg-sprite-partner_v3.png);
+    width: 144px;
+    height: 48px;
+    background-repeat: no-repeat;
+    background-position: 0px -148px;
+    margin: 10px;
+}
+.copyright-images-csBVfv
+{
+    display: inline-block;
+    background-image: url(https://cdn6.agoda.net/images/sprite/bg-sprite-partner_v3.png);
+    width: 144px;
+    height: 48px;
+    background-repeat: no-repeat;
+    background-position: -288px -148px;
+    margin: 10px;
+}
+.copyright-images-lwfDgh
+{
+    display: inline-block;
+    background-image: url(https://cdn6.agoda.net/images/sprite/bg-sprite-partner_v3.png);
+    width: 144px;
+    height: 48px;
+    background-repeat: no-repeat;
+    background-position: -144px -90px;
+    margin: 10px;
+}
+.copyright-images-vyDgcd
+{
+    display: inline-block;
+    background-image: url(https://cdn6.agoda.net/images/sprite/bg-sprite-partner_v3.png);
+    width: 144px;
+    height: 48px;
+    background-repeat: no-repeat;
+    background-position: -288px -90px;
+    margin: 10px;
+}
+.copyright-footer-content
+{
+    font-family: "mallory";
+    text-align: center;
+    font-size: 80%;
+}
+.search-box-background
+{
+    width: 100%;
+    height: 320px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    content: "";
+    background: url(https://cdn6.agoda.net/images/MVC/default/background_image/illustrations/bg-agoda-homepage.png) center center / cover no-repeat;
+}
+.search-box-section
+{
+    background-color: transparent;
+}
+.title-container
+{
+    display: block;
+    position: relative;
+}
+.title-container-wrapper
+{
+    height: 50px;
+    padding: 3% 0;
+    width: 100%;
+}
+.welcome-message
+{
+    color:white;
+    position: relative;
+}
+.welcome-message-wrapper
+{
+    text-align: center;
+}
+.title-container-heading
+{
+    animation: fadein 1s;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 1.3;
+    margin-bottom: 4px;
+    margin-top: 0;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+.title-container-heading-h2
+{
+    animation: fadein 1s;
+    line-height: 1.3;
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.title-container-options
+{
+    width: 100%;
+    position: relative;
+    flex-direction: column;
+    /* -webkit-box-pack: center; */
+    justify-content: center;
+    /* -webkit-box-align: center; */
+    align-items: center;
+    display: flex;
+    box-sizing: border-box;
+    text-align: center;
+    margin-right: 30px;
+    /* height:400px; */
+    margin-top:-15px;
+}
+.list-of-titile-container
+{
+    z-index: 998;
+    position: relative;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 32px;
+    padding-right: 32px;
+    width: 60%;
+    height:50px;
+    left: auto;
+    /* -webkit-box-pack: center; */
+    justify-content: center;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 6px 2px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+}
+.list-options
+{
+    cursor: pointer;
+    margin-right: 8px;
+    margin-left: 8px;
+    padding-top: 16px;
+    position: relative;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    display: inline-flex;
+}
+.option-name-hotels-homes
+{
+    padding-bottom: 12px;
+    color: rgb(83, 146, 249);
+}
+.option-name
+{
+    padding-bottom: 12px;
+    color: rgb(42, 42, 46);
+}
+.option-name-wrapper
+{
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+}
+.list-options-name
+{
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    margin: 0px;
+    color: #0a0101;
+    text-decoration: none;
+}
+.list-options-name-active
+{
+    color:rgb(83, 146, 249);
+}
+.list-options-name-underline
+{
+    display: none;
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgb(83, 146, 249);
+}
+.search-box-options
+{
+    top: 20px;
+    width: 100%;
+    display:block;
+    text-align: center;
+    font-size: 12px;
+    margin-top:-20px;   
+}
+.search-box-container
+{
+    z-index: 2;
+    animation: fadein .3s;
+    min-width: 580px;
+    width: 80%;
+    margin: 0;
+    position: relative;
+    margin-left: 90px;
+    margin-right: 900px;
+}
+.Options-content
+{
+    padding-top: 32px;
+    padding-bottom: 64px;
+    padding-left: 48px;
+    padding-right: 48px;
+    width: 100%;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 3px;
+    background-color: #f8f7f9;
+    border-radius: 16px;
+    /* margin-top: -16px; */
+}
+.Options-content-box
+{
+    margin: auto;
+  width: 100%;
+    box-sizing: border-box;
+}
+.payment-logos
+{
+    display: inline-block;
+}
+.Options-content-subbox
+{
+    padding: 0;
+    text-align: left;
+    background: transparent;
+    max-height: none;
+    backface-visibility: hidden;
+}
+.Options-table-content
+{
+    position: relative;
+    text-align: left;
+    margin-top:20px;
+}
+.Options-content-column
+{
+    margin-bottom: 12px;
+}
+.Options-content-column1-box
+{
+    -webkit-tap-highlight-color: transparent;
+    color: inherit;
+    fill: inherit;
+    display: flex;
+    box-sizing: border-box;
+}
+.option-buttons-1
+{
+    -webkit-tap-highlight-color: transparent;
+    color: inherit;
+    fill: inherit;
+    position: relative;
+    margin-right: 8px;
+    margin-left: 0px;
+}
+.overnight-stays-button
+{
+    color: rgb(38, 95, 201);
+    fill: rgb(38, 95, 201);
+    outline-color: transparent;
+    display: flex;
+    white-space: nowrap;
+    cursor: pointer;
+    user-select: none;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    min-height: 36px;
+    padding-top: 4px;
+    padding-right: 16px;
+    padding-bottom: 4px;
+    padding-left: 16px;
+    -webkit-tap-highlight-color: transparent;
+    background: rgb(237, 244, 255);
+    border-width: 2px;
+    border-color: rgb(38, 95, 201);
+    border-radius: 999px;
+    border-style: solid;
+    overflow: hidden;
+    transition: background-color 0s ease 0s, outline-color 0.2s ease-in-out 0s, border-color 0.2s ease-in-out 0s;
+}
+.button-content-1
+{
+    font-weight: 400;
+    text-align: left;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    line-height: calc(18.19px);
+    font-size: 14px;
+    margin-top: calc(-1.19px);
+    margin-bottom: calc(-1.19px);
+    overflow: hidden;
+    margin: 0px;
+}
+.option-buttons-2
+{
+    -webkit-tap-highlight-color: transparent;
+    color: inherit;
+    fill: inherit;
+    position: relative;
+}
+.day-use-stays-button
+{
+    color: rgb(36, 38, 44);
+    fill: rgb(36, 38, 44);
+    outline-color: transparent;
+    display: flex;
+    white-space: nowrap;
+    cursor: pointer;
+    user-select: none;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    min-height: 36px;
+    padding-top: 4px;
+    padding-right: 16px;
+    padding-bottom: 4px;
+    padding-left: 16px;
+    -webkit-tap-highlight-color: transparent;
+    background: rgb(255, 255, 255);
+    border-width: 1px;
+    border-color: rgb(193, 203, 224);
+    border-radius: 999px;
+    border-style: solid;
+    overflow: hidden;
+    transition: background-color 0s ease 0s, outline-color 0.2s ease-in-out 0s, border-color 0.2s ease-in-out 0s;
+}
+.button-content-2
+{
+    font-weight: 400;
+    text-align: left;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    line-height: calc(18.19px);
+    font-size: 14px;
+    margin-top: calc(-1.19px);
+    margin-bottom: calc(-1.19px);
+    overflow: hidden;
+    margin: 0px;
+}
+.destination-property-search
+{
+    border:1px solid rgb(193, 203, 224);
+    background-color: white;
+    border-radius: 8px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-size: 16px;
+    height: 66px;
+    padding: 0;
+    margin: 0 0 12px;
+    width: 1125px;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    margin-right: 10px;
+    /* padding-right: 10px; */
+}
+.destination-property-search-box
+{
+    padding: 0 10px;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    cursor: pointer;
+}
+.destination-search-symbol
+{
+    padding-right: 16px;
+    padding: 12px 14px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #333;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0;
+}
+.user-input-destination
+{
+    width: calc(100% - 60px);
+    vertical-align: middle;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+.place-user-input
+{
+    font-size: 16px;
+    background-color: #fff;
+    color: #2a2a2e;
+    outline-color: #75a8f9;
+    font-weight: 400;
+    line-height: 1.25;
+    margin-top: 13px;
+    margin-left: 10px;
+    padding: 0;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-overflow: ellipsis;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-align: start;
+    appearance: textfield;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-rendering: auto;
+}
+.Hotels-homes-check-in
+{
+    border:1px solid rgb(193, 203, 224);
+    /* border-color: #dddfe2; */
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    margin-bottom: 12px;
+    width: 25%;
+    /* border: 1px solid; */
+    border-radius: 8px;
+    box-shadow: none;
+    font-size: 16px;
+    height: 66px;
+    padding: 0;
+    position: relative;
+    vertical-align: top;
+    margin: 0 0 12px;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+/* .symbol-check-in
+{
+    padding-right: 16px;
+} */
+.Hotels-homes-check-in-wrapper
+{
+    display: inline-block;
+    padding: 0 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    cursor: pointer;
+}
+.check-in-data
+{
+    width: calc(100% - 60px);
+    vertical-align: middle;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+.check-in-data-wrapper
+{
+    width: auto;
+    padding: 5px 0;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: left;
+}
+.check-in-date
+{
+    font-weight: 400;
+    color: #2a2a2e;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    text-align: left;
+    font-size: 16px;
+}
+.check-in-day
+{
+    font-size: 14px;
+    color: #999;
+    line-height: 1.25;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+.Hotels-homes-check-out
+{
+    border:1px solid rgb(193, 203, 224);
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    /* border-color: #dddfe2; */
+    margin-bottom: 12px;
+    width: 25%;
+    /* border: 1px solid; */
+    border-radius: 8px;
+    box-shadow: none;
+    font-size: 16px;
+    height: 66px;
+    padding: 0;
+    margin: 0 0 12px;
+    background-color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    text-align: left;
+    /*    content: "";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 5px;*/
+}
+.Hotels-homes-check-out-wrapper
+{
+    padding: 0 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-block;
+}
+.symbol-check-out
+{
+    padding-left: 6px;
+    padding-right: 16px;
+    padding: 12px 14px;
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 0;
+    display: inline-block;
+    vertical-align: middle;
+    /*speak: none;*/
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    font-family: icons;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    text-decoration: inherit;
+    text-transform: none;
+}
+.check-out-data
+{
+    width: calc(100% - 60px);
+    vertical-align: middle;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+.check-out-data-wrapper
+{
+    font-size: 16px;
+    width: auto;
+    padding: 5px 0;
+    text-align: left;
+}
+.check-out-date
+{
+    font-weight: 400;
+    color: #2a2a2e;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.check-out-day
+{
+    font-size: 14px;
+    color: #999;
+    line-height: 1.25;
+    text-overflow: ellipsis;
+}
+.Hotels-homes-occupancy
+{
+    border:1px solid rgb(193, 203, 224);
+    /* border-color: #dddfe2; */
+    width: 47.7%;
+    /* border: 1px solid; */
+    border-radius: 8px;
+    box-shadow: none;
+    font-size: 16px;
+    height: 66px;
+    padding: 0;
+    margin-bottom: 0;
+    /*margin-right: 10px;
+    margin-left: 30px;*/
+    margin: 0 0 15px 10px;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    text-align: left;
+    background-color: #fff;
+    /* padding-right:10px; */
+}
+.Hotels-homes-occupancy-wrapper
+{
+    padding: 0 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+}
+.symbol-occupancy
+{
+    padding-right: 16px;
+    padding: 12px 14px;
+    font-size: 20px;
+    margin-bottom: 0;
+    color: #333;
+    display: inline-block;
+    vertical-align: middle;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    font-family: icons;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    text-decoration: inherit;
+    text-transform: none;
+}
+.occupancy-data
+{
+    width: calc(100% - 60px);
+    vertical-align: middle;
+    display: inline-block;
+}
+.occupancy-data-wrapper
+{
+    font-size: 16px;
+    width: auto;
+    padding: 5px 0;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.occupancy-count
+{
+    font-weight: 400;
+    padding-right: 34px;
+    color: #2a2a2e;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.occupancy-rooms
+{
+    font-size: 14px;
+    color: #999;
+    line-height: 1.25;
+    text-overflow: ellipsis;
+}
+.occupancy-count-increase
+{
+    font-size: 16px;
+    right: 24px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.count-increase-icon
+{
+    /*: none;*/
+    cursor: pointer;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-family: icons;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 3px;
+    text-decoration: inherit;
+    text-transform: none;
+    vertical-align: middle;
+    font-size: 12px;
+}
+.bundle-and-add-Flight
+{
+    margin-top: 24px;
+}
+.bundle-and-add-Flight-wrapper
+{
+    width: 100%;
+    flex-direction: unset;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    text-align: left;
+}
+.bundle-and-save
+{
+    margin-right: 12px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    width: unset;
+    display: inline-block;
+    text-align: unset;
+    background-color: rgb(225, 45, 45);
+    color: rgb(255, 255, 255);
+    border-radius: 2px;
+}
+.bundle-style
+{
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 400;
+    margin: 0px;
+}
+.add-flight
+{
+    margin-right: 4px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    display: inline-flex;
+}
+.add-flight-button
+{
+    color: rgb(38, 95, 201);
+    fill: rgb(38, 95, 201);
+    outline-color: transparent;
+    display: flex;
+    cursor: pointer;
+    user-select: none;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    height: 36px;
+    padding-top: 8px;
+    padding-right: 24px;
+    padding-bottom: 8px;
+    padding-left: 24px;
+    -webkit-tap-highlight-color: transparent;
+    background: transparent;
+    border-width: 0px;
+    border-radius: 999px;
+    overflow: hidden;
+    transition: background-color 0s ease 0s, outline-color 0.2s ease-in-out 0s, border-color 0.2s ease-in-out 0s;
+}
+.add-flight-button-wrapper
+{
+    -webkit-tap-highlight-color: transparent;
+    color: inherit;
+    fill: inherit;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.add-flight-button-wrapper i{
+    /* height:15px;
+    width:15px; */
+    font-size: 1.3rem;
+    padding-right: 5px;
+}
+.plus-symbol
+{
+    overflow: hidden;
+    min-width: 20px;
+    min-height: 20px;
+    max-width: 20px;
+    max-height: 20px;
+    margin-right: 8px;
+}
+.plus-symbol-content
+{
+    font-weight: 400;
+    text-align: left;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    line-height: calc(18.19px);
+    font-size: 16px;
+    margin-left:15px;
+    margin-top: calc(-1.19px);
+    margin-bottom: calc(-1.19px);
+    overflow: hidden;
+    margin: 0px;
+}
+.search-button
+{
+    position:absolute;
+    background-color: rgb(83,146,249);
+    padding: 20px;
+    height: 70px;
+    width: 600px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: -35px;
+    margin-left:-250px;
+    border:2px solid rgb(83,146,249);
+    /* margin-right: 100px; */
+}
+.search-content
+{
+    color: white;
+    font-size: 25px;
+}
+.round-trip-economy-direct
+{
+    display:flex;
+    justify-content: space-between;
+}
+.round-trip-economy
+{
+    display: flex;
+    flex: 1 1 0%;
+    padding-bottom: 16px;
+    text-align: left;
+}
+.round-trip
+{
+    padding-left: 0px;
+    padding-right: 20px;
+    position: relative;
+    display: inline-block;
+    width:100px;
+}
+.round-trip-section
+{
+    /* padding-left: 0px;
+  padding-right: 0px;
+  position: relative;
+  display: inline-block; */
+  color: inherit;
+  fill: inherit;
+}
+.dropbtn-round-trip,
+.dropbtn-economy
+{
+    background-color: white;
+    border-width: 1px;
+    color: rgb(36,38,44);
+    border-color: rgb(193, 203, 224)9;
+    display: flex;
+    outline-color: transparent;
+    user-select: none;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 30px;
+    min-height: 36px;
+    padding-top: 4px;
+    padding-right: 16px;
+    padding-bottom: 4px;
+    padding-left: 16px;
+    font-size: 15px;
+    padding: 10px;
+    cursor: pointer;
+    border-style: solid;
+    overflow: hidden;
+    transition: background-color 0s ease 0s, outline-color 0.2s ease-in-out 0s, border-color 0.2s ease-in-out 0s;
+
+}
+.drpbtn-content
+{
+    font-weight: 400;
+  text-align: left;
+  /* display: -webkit-box; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* -webkit-line-clamp: 1; */
+  /* -moz-box-orient: vertical; */
+  line-height: calc(18.19px);
+  font-size: 14px;
+  margin-top: calc(-1.19px);
+  margin-bottom: calc(-1.19px);
+}
+.direct-only-section
+{
+    align-self: center;
+    cursor: pointer;
+    /* margin-left:600px; */
+    width: 10%;
+}
+.direct-only-label
+{
+    display: flex;
+    position: relative;
+    align-items: center;
+    font-weight: 500;
+    margin-bottom: 5px;
+    max-width:100%;
+    cursor: pointer;
+}
+.direct-only-checkbox
+{
+    /* position: absolute; */
+    margin: 0px;
+    border: medium;
+  cursor: pointer;
+  width:18px;
+  height:18px;
+}
+.direct-only-content
+{
+    /* margin-left: 26px; */
+    display: inline-flex;
+    padding-left: 5px;
+    font-family: kite-mallory;
+    font-size: 14px;
+    line-height: 20px;
+  font-weight: 400;
+  color:black;
+}
+.flight-departure-return,
+.passenger-hotel
+{
+    text-align: left;
+    display: flex;
+    margin: 0 -6px;
+    position: relative;
+    height:80px;
+}
+.flight-location,
+.departure-return,
+.passenger-room
+{
+    display: flex;
+    margin:6px;
+    position:relative;
+    width: calc(50% - 12px);
+    cursor: pointer;
+    border-radius: 50px;
+    margin-right:20px;
+    /* margin-left:20px;    */
+}
+.passenger-room{
+    width:550px;
+    margin-right:15px;
+}
+.arrow-icons
+{
+    min-width: 12px;
+    min-height: 12px;
+    max-width: 12px;
+    max-height: 12px;
+    margin-left: 8px;
+}
+.flight-icons,
+.location-icons,
+.calendar-icons,
+.two-people-icons,
+.room-icons,
+.count-increase-icon
+{
+    height:25px;
+    width:25px;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+.flying-from-section,
+.flying-to-section,
+.departure,
+.passenger,
+.room
+{
+    display: inline-block;
+    background-color: white;
+    flex: 1;
+    margin: 0;
+    position: relative;
+    width: calc(50%-12px);
+}
+.flying-from
+{
+    display: flex;
+}
+.Icon-wrapper
+{
+    padding: 0 8px;
+    width: 100%;
+    display:flex;
+}
+.city-airport,
+.departure-heading
+{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: rgb(144, 148, 156);
+}
+
+.flying-from-input,
+.flying-to,
+.departure-location,
+.passenger-count,
+.room-count
+{
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #fff;
+    color: #2a2a2e;
+    height:30px;
+    /* width:300px; */
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    border: none;
+    border-radius: 4px;
+}
+.search-hotels{
+    width:48%;
+    border:1px solid rgb(193, 203, 224);
+    margin-top:8px;
+    margin-bottom:8px;
+    border-radius: 8px;
+    background-color: #fff;
+}
+.search-hotels-label
+{
+    width:50px;
+    text-align: center;
+    margin-top: 20px;
+}
+.search-hotels-content
+{
+    height:20px;
+    width:20px;
+    /* margin-bottom:15px; */
+}
+.search-hotels-value
+{
+    background-color: #fff;
+    color: #2a2a2e;
+    padding-top:20px;
+    font-size: 16px;
+}
+.flying-from-content
+{
+    width: calc(100% - 52px);
+    margin-top:10px;
+    margin-left:15px;
+}
+.label-box
+{
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.flying-to-content,
+.departure-section
+{
+    /* display: block; */
+    /* vertical-align: middle; */
+    display: flex;
+    flex-direction: column;
+    /* color: rgb(144, 148, 156); */
+    font-weight: 700;
+    margin-top: 10px;
+    /* margin-bottom: 0px;*/
+    margin-left: 15px;
+}
+.city-airport-label,
+.departure-heading-label
+{
+    cursor: pointer;
+    margin-bottom: 0px;
+    margin-left: 4px;
+    color: rgb(144, 148, 156);
+}
+.city-airport
+{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+}
+.route-swap-section
+{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+.route-swap-button
+{
+    position: relative;
+    user-select: none;
+    padding: 8px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 3px 1px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    transition: all 0.15s ease-in-out 0s;
+}
+.route-swap-button:hover
+{
+    cursor: pointer;
+    color: white;
+    background-color: #5392f9;
+}
+.route-swap-content
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    transform: rotate(0deg);
+    transition: all 0.3s ease-in-out 0s;
+}
+.route-swap-icon
+{
+    overflow: hidden;
+    font-size: 16px;
+    width: 1em;
+    height: 1em;
+}
+.count-increase-icon
+{
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+.search-icon
+{
+    height:30px;
+    width:30px;
+    margin-top: 10px;
+    margin-left: 0px;
+}
+/* .destination-property
+{
+    margin-left:-30px;
+} */
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 40px;
+    /* justify-content: space-around; */
+    align-items: center;
+    margin-right:50px;
+    margin-left: 50px;
+    /* position:relative; */
+
+    /* padding:10px;
+    width:100%; */
+}
+
+.content {
+    /* margin: 100px; */
+    width:100%;
+    margin:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 35px;
+}
+
+.hide{
+    display: none;
+}
+
+.show {
+    color: blue;
+}
+.featured-homes-span-style
+{
+    text-decoration: none;
+}
+
+/*Flights and Activities*/
+
+.flight-wrapper,
+.accommodation-wrapper
+  {
+    display: flex;
+    /* display:block; */
+    max-width: 1500px;
+    height:200px;
+    position: relative;
+  }
+  .flight-wrapper i,
+  .accommodation-wrapper i
+  {
+    margin-right: 50px;
+    margin-left: 50px;
+    top: 50%;
+    height: 46px;
+    width: 46px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    position: absolute;
+    text-align: center;
+    line-height: 44px;
+    background: #fff;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+  }
+  .flight-images,
+  .image-accommodation
+  {
+    height: 185px;
+    width: 430px;
+    margin-right: 20px;
+    /* margin-bottom: 20px; */
+    /* object-fit: cover; */
+  }
+  .flights-activities-image,
+  .accommodation-image
+  {
+    height: 200px;
+    width: 410px;
+    border-radius: 10px 10px 10px 10px;
+    /* height:250px; */
+  }
+  .flight-wrapper i:active,
+  .accommodation-wrapper i:active
+  {
+    transform: translateY(-50%) scale(0.9);
+  }
+  .flight-wrapper i:hover,
+  .accommodation-wrapper i:hover,
+  .Top-destination-India i:hover,
+  .Popular_destinations_outside_India i:hover
+  {
+    /* background: #f2f2f2; */
+    background-color: rgb(195, 195, 195);
+  }
+  .-wrapper i:first-child,
+  .accommodation-wrapper i:first-child
+  {
+    left: -22px;
+    display: none;
+
+  }
+  .flight-wrapper i:last-child,
+  .accommodation-wrapper i:last-child
+  {
+    right: -22px;
+  }
+  .flight-wrapper,
+  .accommodation-wrapper,
+  .flight-carousel,
+  .accommodation-carousel
+  {
+    display: flex;
+    font-size: 0px;
+    cursor: pointer;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+  }
+  .flight-carousel::-webkit-scrollbar
+  {
+    display: none;
+  }
+  .accommodation-carousel::-webkit-scrollbar
+  {
+    display: none;
+  }
+  .flight-wrapper::-webkit-scrollbar
+  {
+    display: none;
+  }
+  .accommodation-wrapper::-webkit-scrollbar
+  {
+    display: none;
+  }
+  .flight-carousel .dragging,
+  .accommodation-carousel.dragging
+  {
+    cursor: grab;
+    scroll-behavior: auto;
+  }
+  .flight-carousel.dragging img,
+  .accommodation-carousel.dragging img
+  {
+    pointer-events: none;
+  }
+  .flight-carousel img:first-child,
+  .accommodation-carousel img:first-child
+  {
+    margin-left: 0px;
+  }
+  
+
+  .accommodation-promotions
+{
+    margin-top: 8px;
+    margin-bottom: 24px;
+    max-width: 1000px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+.accommodation-guRtd
+{
+    -webkit-tap-highlight-color: transparent;
+    color: inherit;
+    fill: inherit;
+    position: relative;
+}
+.accommodation-mldGqi
+{
+    scroll-padding-left: 52px;
+    scroll-behavior: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-tap-highlight-color: transparent;
+    color: inherit;
+    fill: inherit;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin-bottom: -16px;
+}
+.accommodation-style
+{
+    -webkit-tap-highlight-color: transparent;
+    color: inherit;
+    fill: inherit;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    justify-content:space-between;
+    min-width: 423px;
+    max-width: 423px;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    margin-right: 8px;
+    margin-left: 8px;
+    padding-bottom: 16px;
+}
+.accommodation-div-style
+{
+    -webkit-tap-highlight-color: transparent;
+    color: inherit;
+    fill: inherit;
+    display: flex;
+    margin-right: 12px;
+    margin-left: 12px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+  /* @media screen and (max-width: 900px) {
+    .carousel img{
+      width: calc(100% / 2);
+    }
+  }
+  
+  @media screen and (max-width: 550px) {
+    .carousel img{
+      width: 100%;
+    }
+  } */
+  
+  /* @media screen and (max-width: 900px) {
+    .carousel img{
+      width: calc(100% / 2);
+    }
+  }
+  
+  @media screen and (max-width: 550px) {
+    .carousel img{
+      width: 100%;
+    }
+  } */
